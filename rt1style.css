@@ -1,0 +1,62 @@
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+@font-face{
+    font-family: ;
+    src: ;
+}
+
+@font-face {
+    font-family: "Crimson Text";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Crimson Text Bold"), local("CrimsonText-Bold"),
+    url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap"),format("woff2");
+    unicode-range: U+0131 U+00-52F, U+1E00-1FFF, U+2200-22FF U+20-24F, U+2B0-2FF, U+370-4FF, U+1E00-1EFF, U+2000-20CF, U+2100-23FF, U+2500-26FF, U+E000-F8FF, U+FB00-FB4F;
+}
+:root{
+--clr-text: #3d3d3d;
+--clr-primary: #067E0A;
+--clr-accent: #764981;
+
+--ff-title: "BFNarrow", sans-serif;
+--ff-serif: "Crimson Text", serif;
+--ff-logo: "Betterfly", sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: var(--ff-serif);
+    color: var(--clr-text); 
+    font-size:1.125rem;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+}
+
+h1,h2,h3,h4,p{
+    margin:0;
+}
+
+h2,h3{
+    font-family: var(--ff-title);
+    line-height: 0.8;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+p{
+    margin-bottom:.85em;
+}
